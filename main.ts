@@ -5,7 +5,7 @@ import { Mutation } from "./resolvers/mutation.ts";
 import { typeDefs } from "./gql/schema.ts";
 import montoose from "mongoose";
 
-const MONGO_URL = Deno.env.get("MONGO_URL");
+const MONGO_URL = "mongodb+srv://rodrigofbm:1234567890r@cluster0.ern9y.mongodb.net/prueba2?retryWrites=true&w=majority";
 if (!MONGO_URL) {
   throw new Error("Please provide a MongoDB connection string");
 }
